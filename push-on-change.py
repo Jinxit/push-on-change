@@ -28,7 +28,7 @@ title = sys.argv[3]
 
 lastOutput = ""
 while True:
-	output = subprocess.Popen(command, stdout=subprocess.PIPE).communicate()[0]
+	output = subprocess.Popen(command.split(), stdout=subprocess.PIPE).communicate()[0]
 	if lastOutput != output:
 		notify(title, output)
 		lastOutput = output
