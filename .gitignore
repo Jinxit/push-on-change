@@ -55,4 +55,4 @@ docs/_build/
 target/
 
 # Never upload your API keys folks
-token.py
+tokens.py

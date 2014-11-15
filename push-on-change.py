@@ -6,7 +6,7 @@ import subprocess
 import httplib
 import urllib
 
-from token import *
+from tokens import *
 
 def notify(title, message):
 	post = {
