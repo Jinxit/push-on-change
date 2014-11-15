@@ -11,6 +11,6 @@ and what title should be displayed for the notification.
 
 ## Example
 
-    $ ./push-on-change.py "ls -l" 10 LS
+    $ ./push-on-change.py "ls | wc -l" 10 "File count"
   
-This will execute "ls -l" every 10 seconds, and once the output changes it will notify your device with the title "LS".
+This will check your current directory every 10 seconds, and once the number of files in the directory changes, it will notify your device using the title "File count".
